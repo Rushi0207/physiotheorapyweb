@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+html, body {
+    height: 90%;
+    margin: 0;
+  }
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 200vh;
+    overflow-x: hidden;
+
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:  1000000;
+    background-color: #0000009e;
+    
+}
+
+header .logo
+{
+    color: rgb(13, 9, 245);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header .logo img 
+{
+    height: 60px;
+    width: 190px;
+    background-color: rgba(255, 255, 255, 0.479);
+
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+header ul li a 
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255,193,7);
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: rgb(255,193,7);
+    color: #2b1055; 
+}
+
+
+.checkBtn
+{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+
+
+.frame
+{
+    height: 100%;
+    width: 100%;
+    min-height: 110vh;
+}
+
+@media (max-width:961px){
+    header{
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+
+    header ul {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #0000009e;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .checkBtn
+    {
+        display: block;
+    }
+
+    header ul li 
+    {
+        display: block;
+        line-height: 5em;
+    }
+
+    header ul li a 
+    {
+        font-size: 30px;
+    }
+
+    #check:checked ~ ul 
+    {
+        left:0;
+    }
+
+    #check:checked ~ body 
+    {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .frame{
+        height: 100%;
+        width: 100%;
+        min-height: 60vh;
+    }
+
+}
+
+
+
+
+
+
+
+
+.center-content {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Optional: Ensure the container takes the full viewport height */
+}
+

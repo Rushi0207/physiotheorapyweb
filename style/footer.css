@@ -1,0 +1,33 @@
+.footer {
+    background-color: rgb(255, 193, 7);
+    background-position: top;
+    background-size: 100%;
+    color: #000000;
+    padding: 20px;
+    padding-bottom: 0px;
+    }
+
+    .footer > .text {
+        text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    }
+
+    .footer > .text1 {
+        text-align: center;
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    padding-bottom: 0.3rem;
+    }
+
+    .links {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .links a {
+        text-decoration: none;
+    color: #fff;
+    margin: 0 0.5rem;
+    }
